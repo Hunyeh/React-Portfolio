@@ -2,25 +2,28 @@ import React from "react";
 
 function Header(props) {
     return (
-        <header class="header">
+        <header className="header">
             <h1>
                 <a href="index.html">Hunter</a>
             </h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#" onClick={()=>props.setCurrentPage('About')}>About Me</a>
+                        <a href="#About" onClick={()=>props.setCurrentPage('About')}>About Me</a>
                     </li>
                     <li>
-                        <a href="#" onClick={()=>props.setCurrentPage('Projects')}>Portfolio</a>
+                        <a href="#Projects" onClick={()=>props.setCurrentPage('Portfolio')}>Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" onClick={()=>props.setCurrentPage('Contact')}>Contact</a>
+                        <a href="#Contact" onClick={()=>props.setCurrentPage('Contact')}>Contact</a>
+                    </li>
+                    <li>
+                        <a href="#Resume" onClick={()=>props.setCurrentPage('Resume')}>Resume</a>
                     </li>
                 </ul>
             </nav>
         </header>
     )
-}
+};
 
 export default Header;

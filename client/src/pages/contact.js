@@ -1,35 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
+import { validateEmail } from '../utils/helpers';
 
 function Contact() {
-    return(
-        <section id="Contact" class="Contact">
-            <div class="contact-me">
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        if (!errorMessage) {
+            setFormState({ [e.target.name]: e.target.value });
+            console.log('Form', formState)
+        }
+    };
+
+    const handleChange = e => {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+    };
+
+    return (
+        <section id="Contact" className="Contact">
+            <div className="contact-me">
                 <h3>Contact Me</h3>
-                <p>Any questions?
+                {/* <p>Any questions?
                     <br />
                     Please feel free to reach out.
                 </p>
                 <address>
                     P: <a href="609.609.609">609-609-609</a> <br />
-                    E: <a href="doringhunter@yahoo.com">doringhunter@yahoo.com</a>
-                </address>
+                    E: <a href="mailto:doringhunter@yahoo.com">doringhunter@yahoo.com</a>
+                </address> */}
             </div>
-            <div class="contact-form">
-                <form>
-                    <label for="contact-name">Enter Your Name:</label>
-                    <input type="text" id="contact-name" placeholder="Your Name" />
-
-                    <label for="email">Enter Your Email:</label>
-                    <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
-
-                    <label for="contact-message">Type Your Message:</label>
-                    <textarea id="contact-message" placeholder="Your Message"></textarea>
-
+            <div className="contact-form">
+                <form id="contact-form" onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email address:</label>
+                        <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Message:</label>
+                        <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    </div>
+                    {errorMessage && (
+                        <div>
+                            <p className='error-text'>{errorMessage}</p>
+                        </div>
+                    )}
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </section>
     )
-}
+};
 
 export default Contact;
