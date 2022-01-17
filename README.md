@@ -25,7 +25,7 @@ none
 None
 
 ## Deployed Application
-(https://hunyeh.github.io/React-Portfolio/)
+https://hunyeh.github.io/React-Portfolio/
 
 ## Questions
 undefined
