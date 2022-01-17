@@ -1,10 +1,18 @@
 import React from "react";
+import AvatarMaker from '../images/AvatarMaker.png'
 
 function Header(props) {
     return (
         <header className="header">
             <h1>
-                <a href="index.html">Hunter</a>
+                <a href="">Hunter</a>
+                <div className="container">
+                <div className="row d-flex ">
+                    <div className="col-xs-12 mb-12">
+                        <img alt="" src={AvatarMaker}></img>
+                    </div>
+                </div>
+            </div>
             </h1>
             <nav>
                 <ul>
@@ -18,7 +26,7 @@ function Header(props) {
                         <a href="#Contact" onClick={()=>props.setCurrentPage('Contact')}>Contact</a>
                     </li>
                     <li>
-                        <a href="#Resume" onClick={()=>props.setCurrentPage('Resume')}>Resume</a>
+                        <a href="/Resume.pdf" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>

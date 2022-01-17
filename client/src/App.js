@@ -8,7 +8,6 @@ import Footer from './component/footer';
 import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-import Resume from './pages/resume';
 import Portfolio from './pages/portfolio';
 
 function App() {
@@ -21,8 +20,6 @@ function App() {
         return <Portfolio/>
     } else if (currentPage === 'Contact') {
       return <Contact/>
-    } else if (currentPage === 'Resume') {
-      return <Resume/>
     } else {
       return <About/>
     }
