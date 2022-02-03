@@ -5,13 +5,7 @@ import Typed from 'react-typed';
 function About() {
     return (
         <section id="About-Me" className="my-5 About-me">
-            {/* <div>
-                <h2 className="about-header">
-                    About Me
-                </h2>
-            </div> */}
-
-            <div className="hero-full-container background-image-container white-text-container">
+            <div>
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12">
@@ -44,13 +38,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            {/* <div className="container">
-                <div className="row d-flex my-4">
-                    <div className="col-xs-12 mb-12">
-                        <img alt="" src={AvatarMaker}></img>
-                    </div>
-                </div>
-            </div> */}
         </section>
     )
 };

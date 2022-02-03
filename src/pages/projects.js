@@ -15,10 +15,10 @@ function Projects() {
             Image: require("../images/healthtracker.JPG")
         },
         {
-            name: 'Photo Portfolio',
-            url: 'https://hunyeh.github.io/photo-port/',
-            repo: 'https://github.com/Hunyeh/photo-port',
-            Image: require("../images/photoport.JPG")
+            name: 'goghbuy',
+            url: 'https://nameless-fjord-50324.herokuapp.com/',
+            repo: 'https://github.com/Hunyeh/goghbuy',
+            Image: require("../images/goghbuy.JPG")
         },
         {
             name: 'Budget Tracker',
@@ -38,7 +38,6 @@ function Projects() {
             repo: 'https://github.com/Hunyeh/food-festival',
             Image: require("../images/foodfest.JPG")
         },
-
     ]
 
     return(

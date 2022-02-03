@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './component/header';
 import Footer from './component/footer';
 import About from './pages/about';
-import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
 
@@ -28,7 +27,9 @@ function App() {
   return (
     <div className="App">
       <Header setCurrentPage={setCurrentPage}/>
+      <div className=''>
       {renderPage()}
+      </div>
       <Footer/>
     </div>
   );
