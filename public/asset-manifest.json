@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.c86a7036.css",
+    "main.js": "/React-Portfolio/static/js/main.91c20c6d.js",
+    "static/js/787.db9b214f.chunk.js": "/React-Portfolio/static/js/787.db9b214f.chunk.js",
+    "static/media/runbuddy.JPG": "/React-Portfolio/static/media/runbuddy.090ec37f5ae3b4c70f56.JPG",
+    "static/media/foodfest.JPG": "/React-Portfolio/static/media/foodfest.405be5549aca7441ce35.JPG",
+    "static/media/budgettracker.JPG": "/React-Portfolio/static/media/budgettracker.024e509b2beaf4664a3e.JPG",
+    "static/media/photoport.JPG": "/React-Portfolio/static/media/photoport.401b598685abe08ebae5.JPG",
+    "static/media/thehuddle.JPG": "/React-Portfolio/static/media/thehuddle.6c55a014f27a5ae8e030.JPG",
+    "static/media/healthtracker.JPG": "/React-Portfolio/static/media/healthtracker.85fe4db06ef6585c6934.JPG",
+    "index.html": "/React-Portfolio/index.html",
+    "main.c86a7036.css.map": "/React-Portfolio/static/css/main.c86a7036.css.map",
+    "main.91c20c6d.js.map": "/React-Portfolio/static/js/main.91c20c6d.js.map",
+    "787.db9b214f.chunk.js.map": "/React-Portfolio/static/js/787.db9b214f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c86a7036.css",
+    "static/js/main.91c20c6d.js"
+  ]
+}
