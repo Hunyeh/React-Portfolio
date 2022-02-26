@@ -9,7 +9,7 @@ function Header(props) {
                 <div className="container">
                 <div className="row d-flex ">
                     <div className="col-xs-12 mb-12">
-                        <img alt="" src={AvatarMaker}></img>
+                        {/* <img alt="" src={AvatarMaker}></img> */}
                     </div>
                 </div>
             </div>

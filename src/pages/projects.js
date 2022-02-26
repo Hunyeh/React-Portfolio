@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 function Projects() {
     const projects = [
@@ -40,23 +41,28 @@ function Projects() {
         },
     ]
 
-    return(
-       <div className="container">
-           <div className="row d-flex my-5">
-               {projects.map((project, index) => (
-                   <div className="col-4 my-4 projectss" key={index}>
-                       {project.name}
-                       <a target="_blank" href={project.url}>
-                       <img src={project.Image}
-                        width="300px"
-                        height="230px"
-                       />
-                       </a>
-                       <a href={project.repo}>GitHub Repository</a>
-                   </div>
-               ))}
-           </div>
-       </div>
+    return (
+        <div className="container mx-auto mt-4">
+            <div className="row">
+                    {projects.map((project, index) => (
+                        <div className="col-md-4 xs-4 col-12">
+                        <div className="card" style={{ width: '18rem' }}>
+                            <div className="card-title" key={index}>
+                               <h5>{project.name}</h5> 
+                                <a target="_blank" href={project.url}>
+                                    <img src={project.Image}
+                                        className="card-img-top"
+                                        width="300px"
+                                        height="230px"
+                                    />
+                                </a>
+                                <a href={project.repo} className="btn "><FaGithub /> Github</a>
+                            </div>
+                        </div>
+                        </div>
+                    ))}
+            </div>
+        </div>
     )
 }
 
