@@ -33,7 +33,7 @@ function About() {
                 <div className="row my-5">
                     <div className="col-xs-12 mb-5">
                         <p>
-                            Hi, my name is Hunter Doring. I am from Brigantine, New Jersey and just recently graduated from Rutgers Full Stack Web Development program. I am passionate about learning coding and everything that comes along with being a full stack web developer. I enjoy working with all parts of web development, but excel with working on the back-end more. Other than coding I enjoy surfing, doing martial arts and playing videogames.
+                            Hi, my name is Hunter Doring. I am from Brigantine, New Jersey and just recently graduated from Rutgers Full Stack Web Development program. I am passionate about learning coding and everything that comes along with being a full stack web developer. I enjoy working with all parts of web development, but excel with working on the back-end more. Other than coding I enjoy surfing, doing martial arts and playing videogames. Please checkout my portfolio and social media located below 😁.
                         </p>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ function Header(props) {
                         <a href="#About" onClick={()=>props.setCurrentPage('About')}>About Me</a>
                     </li>
                     <li>
-                        <a href="#Projects" onClick={()=>props.setCurrentPage('Portfolio')}>Portfolio</a>
+                        <a href="#Projects" onClick={()=>props.setCurrentPage('Portfolio')}>Projects</a>
                     </li>
                     <li>
                         <a href="#Contact" onClick={()=>props.setCurrentPage('Contact')}>Contact</a>
