@@ -1,12 +1,19 @@
 body {
-    background-color:#495057;
+    display: flex;
+    flex-direction: column;
     font-family: 'Acme', sans-serif;
-    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 0 0 20px;
     padding: 0;
-}
-.App {
-    background-color: #495057;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+html {
+    height: 100%;
 }
 /* header styling */
 .header {
@@ -33,12 +40,14 @@ body {
 .header a {
     text-decoration: none;
     color: rgb(255, 151, 15);
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .header nav {
     margin: 7px 15px;
 }
 .header nav ul {
+    padding-top: 5px;
+    padding-right: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,10 +59,13 @@ body {
     font-size: 25px;
 }
 footer {
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: auto;
+    flex: 0 0 50px;
+    /* transform: translate(-50%, -50%); */
 }
 footer h2 {
     color: rgb(255, 151, 15);
@@ -73,6 +85,16 @@ footer a {
 .About-me h1 {
     color: #E9ECEF;
     font-size: 45pt;
+    line-height: 130%;
+   transform: rotateX(0) rotateY(-25deg);
+    text-transform: uppercase;
+    color: #b9dfff;
+    color: #fff;
+    margin: 3rem auto;
+    position: relative;
+    padding: 1rem 0 3rem;
+    text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;
+ 
 }
 .about-info {
     text-align: center;
@@ -97,11 +119,6 @@ label {
 :root {
   --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
 }
-
-body {
-  background: #111 !important;
-}
-
 .card {
   background: #222;
   border: 2px solid #dd2476;
@@ -109,25 +126,31 @@ body {
   margin-bottom: 2rem;
 }
 
+a.btn {
+    background-color: rgb(255, 151, 15);;
+}
+
 .btn {
   border: 5px solid;
   border-image-slice: 1;
   background: var(--gradient) !important;
-  -webkit-background-clip: text !important;
+  background-color: rgb(255, 151, 15);
+  color: rgb(255, 151, 15);;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   border-image-source:  var(--gradient) !important; 
   text-decoration: none;
   transition: all .4s ease;
 }
 
-.btn:hover, .btn:focus {
+/* .btn:hover, .btn:focus {
   background: var(--gradient) !important;
-  -webkit-background-clip: none !important;
+  background-clip: none !important;
   -webkit-text-fill-color: #fff !important;
   border: 5px solid #fff !important; 
   box-shadow: #222 1px 0 10px;
   text-decoration: underline;
-}
+} */
 
 /* media query for 980px max */
 @media screen and (max-width: 980px) {
