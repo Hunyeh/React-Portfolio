@@ -15,6 +15,9 @@ body {
 html {
     height: 100%;
 }
+.mainContent {
+    z-index: 100;
+}
 /* header styling */
 .header {
     /* padding: 15px 25px; */
@@ -33,7 +36,7 @@ html {
 .header h1 {
     font: orange;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 40px;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 1);
 }
@@ -86,14 +89,14 @@ footer a {
     color: #E9ECEF;
     font-size: 45pt;
     line-height: 130%;
-   transform: rotateX(0) rotateY(-25deg);
+   /* transform: rotateX(0) rotateY(-25deg); */
     text-transform: uppercase;
     color: #b9dfff;
     color: #fff;
     margin: 3rem auto;
     position: relative;
     padding: 1rem 0 3rem;
-    text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;
+    /* text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff; */
  
 }
 .about-info {
@@ -118,12 +121,6 @@ label {
 
 :root {
   --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
-}
-.card {
-  background: #222;
-  border: 2px solid #dd2476;
-  color: rgb(129, 205, 255);
-  margin-bottom: 2rem;
 }
 
 a.btn {
@@ -180,6 +177,10 @@ a.btn {
     .header nav ul {
         display: flex;
         justify-content: center;
+    }
+    .card {
+        display: flex;
+        justify-content: space-around;
     }
 }
 @media screen and (max-width: 575px) {

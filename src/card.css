@@ -1,0 +1,47 @@
+.scene {
+    display: flex;
+    justify-content: space-around;
+    perspective: 800px;
+}
+
+.card {
+    position: relative;
+    /* width: 240px; */
+    height: 300px;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-text {
+    color: rgb(129, 205, 255);
+    background-color: whitesmoke
+}
+
+.card:hover {
+    transform: rotateY(0.5turn);
+}
+
+.card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.card__face--back {
+    transform: rotateY(0.5turn);
+}
+
+img {
+    width: 200px;
+    height: 299px;
+    /* object-fit: cover; */
+}

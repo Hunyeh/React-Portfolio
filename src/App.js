@@ -26,10 +26,10 @@ function App() {
   return (
     <div className="App">
       <Header setCurrentPage={setCurrentPage}/>
-      <div className=''>
+      <div className='mainContent'>
       {renderPage()}
       </div>
-      <Footer/>
+      
     </div>
   );
 }

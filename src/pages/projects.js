@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import "../style.css"
+import "../card.css"
 
 function Projects() {
     const projects = [
@@ -52,9 +53,9 @@ function Projects() {
         <div className="container mx-auto mt-4">
             <div className="row">
                     {projects.map((project, index) => (
-                        <div className="col-md-5 xs-4 col-lg-4">
+                        <div className="col-md-5 xs-4 col-lg-4 scene">
                         <div className="card" style={{ width: '19rem' }}>
-                            <div className="card-title" key={index}>
+                            <div className="card-title card__face card__face--front" key={index}>
                                 <a target="_blank" rel="noreferrer" href={project.url}>
                                     <img src={project.Image}
                                         className="card-img-top projectimg"
@@ -63,11 +64,14 @@ function Projects() {
                                         alt={project.name}
                                         height="230px"
                                     />
-                                </a>
-                                <h5 style={{margin: '5px'}}>{project.name}</h5> 
-                                <p className="card-text">{project.Description}</p>
-                                <a href={project.repo} className="btn "><FaGithub /> Github</a>
+                                </a> 
                             </div>
+                            <div className="card__face card__face--back card-text">
+                                <h5 style={{margin: '25px'}}>{project.name}</h5> 
+                                <p className="card-text">{project.Description}</p>
+                                <p>Technologies:</p>
+                                <a href={project.repo} className="btn "><FaGithub /> Github</a>
+                                </div>
                         </div>
                         </div>
                     ))}

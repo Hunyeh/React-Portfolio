@@ -1,10 +1,15 @@
 import React from "react";
+import { FaGithub, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 
 function Header(props) {
     return (
         <header className="header">
             <h1>
-                <a href="/">Hunter</a>
+                <div className="col-12 col-lg-col-sm-4 footericons">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/Hunyeh"> <FaGithub /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hunter-doring-7374a5134"> <FaLinkedin /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/hunyeh/"> <FaInstagramSquare /></a>
+                    </div>
                 <div className="container">
                 <div className="row d-flex ">
                     <div className="col-xs-12 mb-12">
