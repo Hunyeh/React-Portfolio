@@ -25,20 +25,22 @@ function About() {
                     </div>
                 </div>
                 <div className="row about-info">
-                    <div class="card">
-                        <ul className="card__face card-text card__face--front ">
-                            <li>Advanced JS and CSS</li>
-                            <li>JS/CSS Preprocessors</li>
-                            <li>JS Frameworks</li>
-                            <li>Advanced Animations</li>
-                            <li>Deployment Pipelines</li>
-                            <li>Large Apps Architectures</li>
-                            <li>Naming Conventions</li>
-                        </ul>
-                        <div className="card__face card-text card__face--back">
-                            <p>
-                                I am from Brigantine, New Jersey and am a graduate from Rutgers Full Stack Web Development program as well as previously obtaining a Bachelors degree from Stockton University in Finance. Other than coding I enjoy surfing, doing martial arts and playing videogames. Please checkout my projects page and social media located above 😁.
-                            </p>
+                    <div className="col-xs-3 col-md-4 col-lg-5">
+                        <div className="card">
+                            <ul className="card__face card-text card__face--front aboutCard1">
+                                <li>Advanced JS and CSS</li>
+                                <li>JS Frameworks</li>
+                                <li>Database Integrations</li>
+                                <li>Deployment Pipelines</li>
+                                <li>Problem Solving</li>
+                                <li>Large Apps Architectures</li>
+                                <li>Naming Conventions</li>
+                            </ul>
+                            <div className="card__face card-text card__face--back aboutCard2">
+                                <p>
+                                    I am from Brigantine, New Jersey and am a graduate from Rutgers Full Stack Web Development program as well as previously obtaining a Bachelors degree from Stockton University in Finance. Other than coding I enjoy surfing, doing martial arts and playing videogames. Please checkout my projects page and social media located above 😁.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

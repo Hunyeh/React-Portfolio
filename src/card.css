@@ -4,9 +4,20 @@
     perspective: 800px;
 }
 
+.aboutCard1 {
+    padding-top: 20px;
+}
+.aboutCard1 li {
+    padding: 2px;
+}
+
+.aboutCard2 {
+    padding: 30px 10px;
+}
+
 .card {
     position: relative;
-    /* width: 240px; */
+    /* width: 450px; */
     height: 300px;
     margin-bottom: 10rem;
     margin-top: 5rem;
@@ -18,7 +29,8 @@
 
 .card-text {
     color: rgb(129, 205, 255);
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    list-style-type: none;
 }
 
 .card:hover {
