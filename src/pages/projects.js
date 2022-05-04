@@ -59,26 +59,26 @@ function Projects() {
         <div className="container mx-auto mt-4">
             <div className="row">
                 {projects.map((project, index) => (
-                    <div className="col-md-5 xs-4 col-lg-4 scene">
+                    <div className="col-md-6 xs-4 col-lg-4 scene">
                         <div className="card" style={{ width: '19rem' }}>
                             <div className="card-title card__face card__face--front" key={index}>
-                                <a target="_blank" rel="noreferrer" href={project.url}>
-                                    <img src={project.Image}
-                                        className="card-img-top projectimg"
-                                        key={project.name}
-                                        width="300px"
-                                        alt={project.name}
-                                        height="230px"
-                                    />
-                                </a>
+                                <img src={project.Image}
+                                    className="card-img-top projectimg"
+                                    key={project.name}
+                                    width="300px"
+                                    alt={project.name}
+                                    height="230px"
+                                />
                             </div>
                             <div className="card__face card__face--back card-text">
                                 <h5 style={{ margin: '25px' }}>{project.name}</h5>
                                 <p className="card-text">{project.Description}</p>
                                 <p>Technologies: {project.technologies}</p>
                                 <a href={project.repo} className="social-links">
-                                    <div><FaRocket /></div>
                                     <div><FaGithub /></div>
+                                </a>
+                                <a href={project.url} className="social-links">
+                                    <div><FaRocket /></div>
                                 </a>
                             </div>
                         </div>

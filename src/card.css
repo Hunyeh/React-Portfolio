@@ -21,14 +21,14 @@
     height: 300px;
     margin-bottom: 10rem;
     margin-top: 5rem;
-    color: white;
+    color: orange;
     cursor: pointer;
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
 }
 
 .card-text {
-    color: rgb(129, 205, 255);
+    color: rgb(235, 150, 22);
     background-color: whitesmoke;
     list-style-type: none;
 }
@@ -43,9 +43,22 @@
     left: 0;
     width: 100%;
     height: 100%;
+    color: rgb(235, 150, 22);
     backface-visibility: hidden;
     transition: 1s ease-in-out;
     -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.card__face1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(235, 150, 22);
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 5px #fff,0 0 20px rgb(235, 150, 22);
 }
 
 .card__face--back {

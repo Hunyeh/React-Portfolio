@@ -34,7 +34,7 @@ html {
     z-index: 9999;
 }
 .header h1 {
-    font: orange;
+    font: rgb(235, 150, 22);
     font-weight: bold;
     font-size: 40px;
     margin: 0;
@@ -43,7 +43,7 @@ html {
 }
 .header a {
     text-decoration: none;
-    color: rgb(255, 151, 15);
+    color: rgb(235, 150, 22);
     padding-left: 20px;
 }
 .header nav {
@@ -80,7 +80,7 @@ html {
     margin: 3rem auto;
     position: relative;
     padding: 1rem 0 3rem;
-    /* text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff; */
+    text-shadow: 0 0 5px #fff,0 0 20px rgb(235, 150, 22);
  
 }
 .about-info {
@@ -96,13 +96,13 @@ html {
    color: #E9ECEF;
 }
 .contact-me h3 {
-    color: rgb(255, 151, 15);
+    color: rgb(235, 150, 22);
     text-align: center;
     font-family: 'Acme', sans-serif;
     font-size: 30pt;
 }
 label {
-   color: rgb(255, 151, 15);
+   color: rgb(235, 150, 22);
    font-size: 18pt;
 }
 
@@ -119,12 +119,20 @@ a.btn {
   border-color: red;
   border-image-slice: 1;
   /* background: var(--gradient) !important; */
-  background-color: rgb(255, 151, 15);
-  color: rgb(255, 151, 15);;
+  background-color: rgb(235, 150, 22);
+  color: rgb(235, 150, 22);
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
+@media screen and (max-width: 1024px) {
+    .card li {
+        font-size: smaller;
+    }
+    .card p {
+        font-size: 18px;
+    }
+}
 /* media query for 980px max */
 @media screen and (max-width: 980px) {
     .header {
@@ -144,6 +152,12 @@ a.btn {
         text-align: center;
         width: 100%;
     }
+    .card li {
+        font-size: smaller;
+    }
+    .card p {
+        font-size: 15px;
+    }
 }
 /* media query for screens 768px and smaller */
 @media screen and (max-width: 768px) {
@@ -158,6 +172,12 @@ a.btn {
         display: flex;
         justify-content: space-around;
     }
+    .card li {
+        font-size: smaller;
+    }
+    .card p {
+        font-size: 17px;
+    }
 }
 @media screen and (max-width: 575px) {
     .header nav ul {
@@ -171,5 +191,14 @@ a.btn {
     }
     .header nav ul li a {
         font-size: 15px;
+    }
+    .card li {
+        font-size: smaller;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .text-content {
+        font-size: 5px;
     }
 }
